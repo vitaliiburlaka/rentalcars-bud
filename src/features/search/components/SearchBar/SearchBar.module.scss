@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.formGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 4px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 64px;
+  }
+}
+
+.withIcon {
+  padding-left: 44px;
+}
+
+.iconContainer {
+  position: absolute;
+  left: 16px;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.inputEndSlot {
+  position: absolute;
+  right: 16px;
+  z-index: 1;
+}
+
+.formField {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  height: 56px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(18 115 196 / 24%);
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 64px;
+  }
+}
+
+.searchBarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 16px 28px;
+  background-color: #068323;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  height: 56px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  &:hover {
+    background-color: darken(#068323, 5%);
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 64px;
+    justify-content: initial;
+    margin-left: 4px;
+  }
+}

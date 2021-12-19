@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-color: #1879ca;
+  height: 64px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.wrap {
+  max-width: 1142px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.topContent {
+  background-color: #1879ca;
+  padding: 32px;
+  margin-bottom: 80px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #fff;
+  text-align: center;
+}
