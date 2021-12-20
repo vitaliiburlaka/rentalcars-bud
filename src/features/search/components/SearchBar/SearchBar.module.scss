@@ -33,10 +33,6 @@
   }
 }
 
-.withIcon {
-  padding-left: 44px;
-}
-
 .iconContainer {
   position: absolute;
   left: 16px;
@@ -45,12 +41,6 @@
   height: 16px;
   vertical-align: top;
   pointer-events: none;
-  z-index: 1;
-}
-
-.inputEndSlot {
-  position: absolute;
-  right: 16px;
   z-index: 1;
 }
 
@@ -72,6 +62,16 @@
   @media screen and (min-width: 1024px) {
     height: 64px;
   }
+}
+
+.withIcon {
+  padding-left: 44px;
+}
+
+.inputEndSlot {
+  position: absolute;
+  right: 16px;
+  z-index: 1;
 }
 
 .searchBarBtn {
